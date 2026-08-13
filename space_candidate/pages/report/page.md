@@ -136,15 +136,15 @@ on Hugging Face `cpu-upgrade` (8 allocated vCPU, 32 GB RAM) with
 
 | Branch / experiment | Purpose | Exact run command | Assessment | Compute |
 | --- | --- | --- | --- | --- |
-| [`orx/baseline-judged-reproduction-with-locked-uv-envi`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/baseline-judged-reproduction-with-locked-uv-envi) | Frozen baseline + uv lock | `uv run python repro/src/verify.py` | Baseline complete | HF cpu-upgrade, 42 s successful |
-| [`orx/claim-1-universal-ow-bayes-proof-certificate`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/claim-1-universal-ow-bayes-proof-certificate) | OW/MAP certificate | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 53 s |
-| [`orx/claim-2-universal-isp-mv-sp-proof-certificate`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/claim-2-universal-isp-mv-sp-proof-certificate) | Exact ISP ordering | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 47 s winning run |
-| [`orx/claim-3-89-replicate-full-simulation`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/claim-3-89-replicate-full-simulation) | Full calibrated simulation | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 74 s |
-| [`orx/claim-5-exact-48-row-ensemble-aggregate`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/claim-5-exact-48-row-ensemble-aggregate) | All Appendix rows | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 85 s |
-| [`orx/claim-6-bradley-terry-inverse-logit-certificate`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/claim-6-bradley-terry-inverse-logit-certificate) | BT/logit proof | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 79 s |
-| [`orx/claim-4-four-route-real-data-access-audit`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/claim-4-four-route-real-data-access-audit) | Three verification routes + falsification | `uv run python repro/src/verify.py` | BLOCKED | HF cpu-upgrade, 90 s |
-| [`orx/final-report-notebook-and-release-gates`](https://github.com/MachineLearning-Nerd/icml26-repro-ZVyd4r9Xl5-llm-aggregation/tree/orx/final-report-notebook-and-release-gates) | Cumulative release regression | `uv run python repro/src/verify.py` | 5 VERIFIED, 1 BLOCKED | HF cpu-upgrade, 95 s |
-| `master` | Publication surface | Not run as an experiment (publication surface) | Reader-facing mirror | No experiment compute |
+| [`historical/judged-baseline`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/historical/judged-baseline) | Frozen baseline + uv lock | `uv run python repro/src/verify.py` | Baseline complete | HF cpu-upgrade, 42 s successful |
+| [`audit/c1-ow-bayes`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/audit/c1-ow-bayes) | OW/MAP certificate | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 53 s |
+| [`audit/c2-isp-ordering`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/audit/c2-isp-ordering) | Exact ISP ordering | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 47 s winning run |
+| [`audit/c3-full-simulation`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/audit/c3-full-simulation) | Full calibrated simulation | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 74 s |
+| [`audit/c5-ensemble-aggregate`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/audit/c5-ensemble-aggregate) | All Appendix rows | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 85 s |
+| [`audit/c6-bradley-terry`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/audit/c6-bradley-terry) | BT/logit proof | `uv run python repro/src/verify.py` | VERIFIED | HF cpu-upgrade, 79 s |
+| [`audit/c4-real-data`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/audit/c4-real-data) | Three verification routes + falsification | `uv run python repro/src/verify.py` | BLOCKED | HF cpu-upgrade, 90 s |
+| [`release/final-gates`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/release/final-gates) | Cumulative release regression | `uv run python repro/src/verify.py` | 5 VERIFIED, 1 BLOCKED | HF cpu-upgrade, 95 s |
+| [`main`](https://github.com/MachineLearning-Nerd/icml26-llm-aggregation/tree/main) | Publication surface | Not run as an experiment (publication surface) | Reader-facing mirror | No experiment compute |
 
 The first baseline job failed before Python because `uv` was absent in its
 image; the corrected image succeeded. One Claim 2 draft failed an over-strong
