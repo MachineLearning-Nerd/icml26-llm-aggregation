@@ -33,7 +33,7 @@ After normalization, the public repository must satisfy all of the following:
 - `main` is the default branch;
 - every branch contains the current README and this audit record;
 - every reachable commit author and committer uses
-  `MachineLearning-Nerd <37579156+MachineLearning-Nerd@users.noreply.github.com>`;
+  MachineLearning-Nerd <MachineLearning-Nerd@users.noreply.github.com>;
 - active README/report links use the renamed repository and final branch names; and
 - whitespace, identity, branch, and GitHub API metadata checks pass.
 

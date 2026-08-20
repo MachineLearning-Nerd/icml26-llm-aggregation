@@ -1,0 +1,33 @@
+{
+  "state_version": 1,
+  "repository": "MachineLearning-Nerd/icml26-llm-aggregation",
+  "paper": "arXiv:2510.01499",
+  "status": "PARTIAL_C1_C2_C3_C5_C6_VERIFIED_C4_BLOCKED_HISTORICAL_SCORE_0_OF_12_NO_CURRENT_SCORE",
+  "normalization": {
+    "history_rewritten": true,
+    "canonical_name": "MachineLearning-Nerd",
+    "canonical_email": "MachineLearning-Nerd@users.noreply.github.com",
+    "public_branch_count": 18,
+    "default_branch": "main",
+    "source_branch_mapping": "legacy master/orx refs -> current purpose-driven branches"
+  },
+  "recovery": {
+    "bundle_sha256": "0f50937f36b993735c22037b5c3f96ffc5f62809ddcf818ea7e21b5fb45d53e4",
+    "pre_normalization_head": "03647482f74a633770ee4961000810883f5624ee",
+    "storage": "external recovery bundle created before history normalization"
+  },
+  "publication_boundary": {
+    "claims_verified": 5,
+    "claims_total": 6,
+    "evidence_points": 10,
+    "evidence_points_total": 12,
+    "historical_score": "0/12",
+    "current_score_claim": false,
+    "publication_allowed": false
+  },
+  "verification_contract": {
+    "local_verifier": "verify_final.py",
+    "fresh_clone_required": true,
+    "metadata_check_required": true
+  }
+}

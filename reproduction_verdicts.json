@@ -1,0 +1,36 @@
+{
+  "repository": "MachineLearning-Nerd/icml26-llm-aggregation",
+  "paper": "arXiv:2510.01499",
+  "audit_status": "PARTIAL_C1_C2_C3_C5_C6_VERIFIED_C4_BLOCKED_HISTORICAL_SCORE_0_OF_12_NO_CURRENT_SCORE",
+  "claims": {
+    "C1": "VERIFIED_SCOPED",
+    "C2": "VERIFIED_SCOPED",
+    "C3": "VERIFIED_SCOPED",
+    "C4": "BLOCKED",
+    "C5": "VERIFIED_SCOPED",
+    "C6": "VERIFIED_SCOPED"
+  },
+  "evidence": {
+    "claims_verified": 5,
+    "claims_total": 6,
+    "points": 10,
+    "points_total": 12,
+    "historical_score": "0/12",
+    "current_score": null,
+    "current_score_claim": false,
+    "publication_allowed": false
+  },
+  "raw_records": {
+    "verification": "outputs/verify_results.json",
+    "legacy_verdict": "outputs/verdict.json",
+    "legacy_gate": "publication_gate.json",
+    "long_report": "reports/llm-aggregation-reproduction/report.md"
+  },
+  "limitations": [
+    "C3 is an independent CPU simulation, not the authors' original LLM inference trace",
+    "C5 reconstructs published aggregate rows, not raw predictions",
+    "C4 is blocked because caches, provenance, and OW-L code are unavailable",
+    "historical 0/12 is provenance only",
+    "no current live-judge score is available"
+  ]
+}

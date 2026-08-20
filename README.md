@@ -51,6 +51,27 @@ The evaluator-visible source and proof artifacts are mirrored under
 `.openresearch/artifacts/` preserve the source contracts, commands, outputs, and
 limitations.
 
+## Standardized audit dossier
+
+The review and machine-readable audit records are:
+
+- [STATUS.md](STATUS.md) — current scope, verdict, historical score, and publication boundary.
+- [CLAIM_EVIDENCE.md](CLAIM_EVIDENCE.md) — claim-by-claim evidence production paths.
+- [SOURCE_AUDIT.md](SOURCE_AUDIT.md) — paper anchors, implementation mapping, and source limitations.
+- [ENVIRONMENT.md](ENVIRONMENT.md) — pinned environment, compute, and rerun contract.
+- [REPORT.md](REPORT.md) — concise reproduction report.
+- [AUTHOR_THANK_YOU.md](AUTHOR_THANK_YOU.md) — thank-you note to the paper authors.
+- [CITATION.cff](CITATION.cff) — citation metadata for this audit and the paper.
+- [claims.json](claims.json) and [reproduction_verdicts.json](reproduction_verdicts.json) — normalized claim records.
+- [EVIDENCE_MANIFEST.json](EVIDENCE_MANIFEST.json) — required evidence paths.
+- [AUTONOMOUS_STATE.json](AUTONOMOUS_STATE.json) — normalization and recovery record.
+- [verify_final.py](verify_final.py) — final repository-integrity verifier.
+
+The standardized state is PARTIAL_C1_C2_C3_C5_C6_VERIFIED_C4_BLOCKED_HISTORICAL_SCORE_0_OF_12_NO_CURRENT_SCORE.
+The historical 0/12 judge result is preserved as provenance only. There is no
+current live-judge score claim. C4 remains blocked because exact real-data
+prediction caches and provenance are unavailable.
+
 ## Branch map
 
 The branch names describe the scientific or release purpose. The full

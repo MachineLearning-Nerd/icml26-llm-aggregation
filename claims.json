@@ -1,0 +1,72 @@
+{
+  "paper": {
+    "title": "Beyond Majority Voting: LLM Aggregation by Leveraging Higher-Order Information",
+    "arxiv": "2510.01499",
+    "venue": "ICML 2026"
+  },
+  "audit": {
+    "type": "clean_room_reproduction",
+    "status": "PARTIAL_C1_C2_C3_C5_C6_VERIFIED_C4_BLOCKED_HISTORICAL_SCORE_0_OF_12_NO_CURRENT_SCORE",
+    "evidence_points": 10,
+    "evidence_points_total": 12,
+    "historical_score": "0/12",
+    "current_score_claim": false,
+    "publication_allowed": false
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "paper_anchor": "Theorem 1",
+      "status": "VERIFIED_SCOPED",
+      "evidence_points": 2,
+      "production_path": "repro/claims/claim1_ow_bayes.py and space_candidate/evidence/claim-1",
+      "result": "exact OW/MAP likelihood factorization; 418 Fraction profiles; dependence control breaks it",
+      "scope": "conditional-independence model in the theorem"
+    },
+    {
+      "id": "C2",
+      "paper_anchor": "Theorem 2",
+      "status": "VERIFIED_SCOPED",
+      "evidence_points": 2,
+      "production_path": "repro/claims/claim2_isp_ordering.py and space_candidate/evidence/claim-2",
+      "result": "ISP >= MV >= SP exact polynomial ordering over 55 profiles",
+      "scope": "x_i >= 1/K premise"
+    },
+    {
+      "id": "C3",
+      "paper_anchor": "N=4, M=10,000 simulation and Theta(1/K) gap",
+      "status": "VERIFIED_SCOPED",
+      "evidence_points": 2,
+      "production_path": "repro/claims/claim3_simulation.py and space_candidate/evidence/claim-3",
+      "result": "89-seed independent CPU campaign across 801 full-size settings",
+      "scope": "synthetic simulation, not original private LLM inference"
+    },
+    {
+      "id": "C4",
+      "paper_anchor": "real-data Table 3",
+      "status": "BLOCKED",
+      "evidence_points": 0,
+      "production_path": "repro/claims/claim4_real_data.py and space_candidate/evidence/claim-4",
+      "result": "four discovery, regeneration, reconstruction, and falsification routes do not recover the needed finite prediction object",
+      "scope": "no real-data accuracy or score is claimed"
+    },
+    {
+      "id": "C5",
+      "paper_anchor": "Appendix E.4",
+      "status": "VERIFIED_SCOPED",
+      "evidence_points": 2,
+      "production_path": "repro/claims/claim5_tables.py and space_candidate/evidence/claim-5",
+      "result": "OW-L beats majority voting in 47 of 48 published ensemble rows",
+      "scope": "published aggregate table reconstruction"
+    },
+    {
+      "id": "C6",
+      "paper_anchor": "Corollary 1",
+      "status": "VERIFIED_SCOPED",
+      "evidence_points": 2,
+      "production_path": "repro/claims/claim6_bt.py and space_candidate/evidence/claim-6",
+      "result": "binary OW inverse-logit equals Bradley–Terry score difference under exact and high-precision checks",
+      "scope": "binary model and stated score convention"
+    }
+  ]
+}

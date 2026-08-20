@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this reproduction audit, please cite the repository and the paper."
+title: "ICML 2026 Beyond Majority Voting LLM Aggregation Reproduction Audit"
+version: 1.0.0
+date-released: 2026-08-20
+authors:
+  - name: MachineLearning-Nerd
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-llm-aggregation"
+url: "https://arxiv.org/abs/2510.01499"
+keywords:
+  - LLM aggregation
+  - majority voting
+  - Bradley-Terry
+  - clean-room reproduction
+  - ICML 2026
+preferred-citation:
+  type: article
+  title: "Beyond Majority Voting: LLM Aggregation by Leveraging Higher-Order Information"
+  authors:
+    - family-names: Ai
+      given-names: Rui
+    - family-names: Pan
+      given-names: Yuqi
+    - family-names: Simchi-Levi
+      given-names: David
+    - family-names: Tambe
+      given-names: Milind
+    - family-names: Xu
+      given-names: Haifeng
+  year: 2025
+  journal: "arXiv preprint arXiv:2510.01499"
+  doi: "10.48550/arXiv.2510.01499"
